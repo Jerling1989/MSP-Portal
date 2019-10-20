@@ -89,7 +89,7 @@ a[aria-expanded=false] .fa-chevron-up {
 
 @media (min-width: 1500px) {
   #portal-table-card {
-    max-height: 68vh;
+    max-height: 69vh;
   }
 }
 
@@ -108,6 +108,24 @@ a[aria-expanded=false] .fa-chevron-up {
 
 .close {
   color: #fff;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    color: #acacac;
+}
+
+::-webkit-scrollbar-track {
+  background: #dadada; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #acacac;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #788487;
 }
 
 /*------------------------------------
