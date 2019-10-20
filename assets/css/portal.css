@@ -213,7 +213,7 @@ h4:hover .anchorjs-link {
 @media (min-width: 1200px) {
   .hs-docs-sidebar {
     position: fixed;
-    top: 3.5rem;
+    /*top: 3.5rem;*/
     width: 17rem;
     height: 100%;
     padding-top: 2rem;
