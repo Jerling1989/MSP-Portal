@@ -93,6 +93,10 @@ a[aria-expanded=false] .fa-chevron-up {
   z-index: 4;
 }
 
+.close {
+  color: #fff;
+}
+
 /*------------------------------------
   Markup
 ------------------------------------*/

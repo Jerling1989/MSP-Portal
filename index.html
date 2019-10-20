@@ -223,8 +223,8 @@
           <div class="card-header">
             <div class="row">
               <div class="col-6">
-                <a class="btn btn-sm btn-primary" href="#!">Add <i class="fa fa-plus"></i></a>
-                <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#deleteModal" href="#!">Delete <i class="fa fa-trash"></i></a>
+                <a class="btn btn-sm btn-primary" data-toggle="modal" data-target="#createPortalModal" href="#!">Add <i class="fa fa-plus"></i></a>
+                <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#deletePortalModal" href="#!">Delete <i class="fa fa-trash"></i></a>
               </div>
 
               <div class="col-6 text-right">
@@ -512,7 +512,7 @@
 
 
       <!-- DELETE PORTAL MODAL -->
-      <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="deletePortalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div style="background: repeating-linear-gradient(
@@ -540,13 +540,69 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button style="pointer-events: none;" type="button" class="btn btn-danger disabled" aria-disabled="true">Delete Portal</button>
+              <button style="pointer-events: none;" type="button" class="btn btn-danger disabled" aria-disabled="true">Delete Portal <i class="fa fa-trash"></i></button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
             </div>
           </div>
         </div>
       </div>
       <!-- END DELETE PORTAL MODAL -->
+
+
+
+      <!-- CREATE NEW PORTAL MODAL -->
+      <div class="modal fade" id="createPortalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div style="background: repeating-linear-gradient(
+                 45deg,
+                 #007bff,
+                 #007bff 10px,
+                 #3867d6 10px,
+                 #3867d6 20px
+               );" class="modal-header">
+
+              <h5 style="font-weight: 600;" class="modal-title text-white h1" id="exampleModalLabel">Create New Portal</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div style="font-size: 17px;" class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="domain">Domain</label>
+                  <input type="text" class="form-control" id="domain" placeholder="Domain">
+                </div>
+
+                <div class="form-group">
+                  <label for="domain">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Full Name">
+                </div>
+
+                <div class="form-group">
+                  <label for="domain">Phone</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                </div>
+
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input type="text" class="form-control" id="company" placeholder="Company Name">
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Add Portal <i class="fa fa-plus"></i></button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END CREATE NEW PORTAL MODAL -->
 
 
   </main>
