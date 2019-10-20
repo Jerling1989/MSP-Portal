@@ -252,7 +252,7 @@ h4:hover .anchorjs-link {
 }
 .hs-docs-navside__links > li > a {
   display: block;
-  padding: 20px 0;
+  padding: 20px 0 20px 34px;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
