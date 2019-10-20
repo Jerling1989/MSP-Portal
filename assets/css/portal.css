@@ -199,8 +199,9 @@ h4:hover .anchorjs-link {
 @media (min-width: 1200px) {
   .hs-docs-content {
     order: 1;
-    padding-right: 4rem;
-    padding-left: 21rem;
+    padding-right: 1.25rem;
+    padding-left: 14.75rem;
+    padding-top: 1rem;
   }
 }
 
