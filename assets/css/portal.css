@@ -13,6 +13,22 @@
 
 body {
   font-size: 12px;
+  /*font-family: sans-serif;*/
+}
+
+.nested li {
+  padding: 10px 0 10px 40px;
+  color: #fff;
+  outline: none;
+  /*padding-top: 20px !important;*/
+}
+
+.nested li:hover {
+  background-color: #0e1620;
+}
+
+.nested li a {
+  color: #fff;
 }
 
 /*------------------------------------
