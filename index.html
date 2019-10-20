@@ -34,11 +34,6 @@
   <!-- ========== LEFT ========== -->
   <div class="js-scrollbar hs-docs-sidebar hs-docs-sidebar--dark">
     <div class="d-flex justify-content-between py-2 py-xl-0">
-      <!-- Search -->
-      <form class="col form-inline input-group-sm">
-        <input class="js-hs-docs-search form-control w-100" type="text" placeholder="Search..." data-url="doc-assets/include/ajax/autocomplete-data-for-starter-search.json">
-      </form>
-      <!-- End Search -->
 
       <!-- Responsive Toggle Button -->
       <button class="btn btn-link hs-docs-sidebar__toggle" type="button"
@@ -57,7 +52,14 @@
 
     <!-- Sidebar Nav -->
     <nav id="navside-accordion" class="hs-docs-navside collapse">
-      <img style="width: 90px; height: auto;" src="assets/img/avanan-logo-white-teal.png">
+      <img style="width: 90px; height: auto; margin-bottom: 10px;" src="assets/img/avanan-logo-white-teal.png">
+
+      <!-- Search -->
+      <form class="form-inline input-group-sm">
+        <input class="js-hs-docs-search form-control w-100" type="text" placeholder="Search..." data-url="doc-assets/include/ajax/autocomplete-data-for-starter-search.json">
+      </form>
+      <!-- End Search -->
+      
       <ul id="components" class="hs-docs-navside__links collapse show" data-parent="#navside-accordion">
         <li><a class="active" href="index.html">Introduction</a></li>
         <li><a href="create-email-protection-policy.html">Admin Guide - How to Create an Email Protection Policy</a></li>

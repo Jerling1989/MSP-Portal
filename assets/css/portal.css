@@ -228,7 +228,7 @@ h4:hover .anchorjs-link {
   }
 
   .hs-docs-sidebar .form-inline {
-    display: none;
+    /*display: none;*/
   }
 }
 @media (min-width: 1200px) {
