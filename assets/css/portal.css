@@ -332,16 +332,19 @@ h4:hover .anchorjs-link {
   background-color: #010a14;
 }
 .hs-docs-sidebar--dark .hs-docs-navside__links > li > a {
-  color: rgba(255,255,255, .5);
+  color: #fff;
+  font-weight: 500;
 }
 .hs-docs-sidebar--dark .hs-docs-navside__links > li > a.active {
   color: #fff;
 }
 .hs-docs-sidebar--dark .hs-docs-navside__links > li > a:hover {
-  color: rgba(255,255,255, .8);
+  color: rgba(255,255,255, .5);
+  background-color: #101924;
 }
 .hs-docs-sidebar--dark .hs-docs-navside__links > li > a.active:hover {
-  color: #569bbe;
+  color: rgba(255,255,255, .5);
+  background-color: #101924;
 }
 
 /*------------------------------------
