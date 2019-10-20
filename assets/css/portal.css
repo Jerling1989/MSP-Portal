@@ -1,17 +1,6 @@
 /*------------------------------------
   General
 ------------------------------------*/
-body {
-  background-color: #f2f2f2;
-}
-
-ul li,
-ol li,
-p,
-table {
-  font-size: .9375rem;
-}
-
 .tab-content .u-header + .u-header,
 .tab-content .alert + .alert,
 .tab-content .nav + .nav,
@@ -238,7 +227,7 @@ h4:hover .anchorjs-link {
   .hs-docs-navside {
     display: block !important;
     max-height: 100%;
-    padding: 1rem 1.5rem 0;
+    padding: 1rem 0;
   }
 }
 .hs-docs-navside__title {
@@ -259,14 +248,15 @@ h4:hover .anchorjs-link {
 }
 .hs-docs-navside__links > li > a {
   display: block;
-  padding-top: .2825rem;
-  padding-bottom: .2825rem;
-  font-size: 90%;
-  color: #5a5f69;
+  padding: 20px 0;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .hs-docs-navside__links > li > a.active {
   font-weight: 600;
-  color: #569bbe;
+  color: #fff;
+  background-color: #26313d;
 }
 .hs-docs-navside__links > li > a:hover {
   color: #222;
@@ -281,7 +271,7 @@ h4:hover .anchorjs-link {
   color: rgba(255,255,255, .5);
 }
 .hs-docs-sidebar--dark .hs-docs-navside__links > li > a.active {
-  color: #569bbe;
+  color: #fff;
 }
 .hs-docs-sidebar--dark .hs-docs-navside__links > li > a:hover {
   color: rgba(255,255,255, .8);
