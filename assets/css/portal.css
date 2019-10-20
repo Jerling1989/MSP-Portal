@@ -59,6 +59,11 @@ a[aria-expanded=false] .fa-chevron-up {
   text-transform: uppercase;
 }
 
+.btn-sm {
+  text-transform: none;
+  margin-bottom: 10px;
+}
+
 /*------------------------------------
   Markup
 ------------------------------------*/
