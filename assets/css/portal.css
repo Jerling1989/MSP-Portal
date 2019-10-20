@@ -33,6 +33,18 @@ body {
 
 .nested li:hover {
   background-color: #0e1620;
+  cursor: pointer;
+}
+
+.nested li:hover > a {
+  text-decoration: none;
+  color: rgba(255,255,255, .5);
+}
+
+.nested .active {
+  font-weight: 800;
+  /*color: rgba(255,255,255, .5);*/
+  background-color: #26313d;
 }
 
 .nested li a {
