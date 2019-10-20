@@ -16,14 +16,14 @@
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
-  <!-- <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css"> -->
-  <!-- <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css"> -->
   <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
-  <link rel="stylesheet" href="doc-assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
-  <link rel="stylesheet" href="doc-assets/vendor/prism/prism.css">
+  <!-- <link rel="stylesheet" href="doc-assets/vendor/jquery-ui/themes/base/jquery-ui.min.css"> -->
+  <!-- <link rel="stylesheet" href="doc-assets/vendor/prism/prism.css"> -->
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="assets/css/theme.css"> -->
 
   <!-- CSS Front Doc -->
   <link rel="stylesheet" href="assets/css/portal.css">
@@ -64,6 +64,43 @@
         <span style="margin-top: -50px; margin-left: 180px; margin-bottom: 20px;" class="fa fa-search"></span>
       </form>
       <!-- End Search -->
+
+
+
+      <!-- Basics Accordion -->
+      <div id="basicsAccordion">
+        <!-- Card -->
+        <div class="card mb-3">
+          <div class="card-header card-collapse" id="basicsHeadingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link btn-block d-flex justify-content-between card-btn p-3"
+                      data-toggle="collapse"
+                      data-target="#basicsCollapseOne"
+                      aria-expanded="true"
+                      aria-controls="basicsCollapseOne">
+                Do you have any built-in caching?
+
+                <span class="card-btn-arrow">
+                  <span class="fa fa-chevron-down toggle-off"></span>
+                </span>
+              </button>
+            </h5>
+          </div>
+          <div id="basicsCollapseOne" class="collapse show"
+               aria-labelledby="basicsHeadingOne"
+               data-parent="#basicsAccordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+
+      </div>
+      <!-- End Basics Accordion -->
+
+
+
       
       <ul style="" id="components" class="hs-docs-navside__links collapse show" data-parent="#navside-accordion">
         <li><a class="active" href="index.html">Introduction</a></li>
