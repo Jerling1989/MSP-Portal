@@ -150,6 +150,11 @@ table tr td:last-child {
   font-size: 10px;
 }
 
+.modal-header {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
 /*------------------------------------
   Markup
 ------------------------------------*/
