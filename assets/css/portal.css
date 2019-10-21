@@ -128,6 +128,15 @@ a[aria-expanded=false] .fa-chevron-up {
     background: #788487;
 }
 
+table tr td:last-child {
+  max-width: 125px;
+  font-weight: 500;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
 /*------------------------------------
   Markup
 ------------------------------------*/
