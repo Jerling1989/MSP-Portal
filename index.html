@@ -11,19 +11,12 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico">
 
-  <!-- Google Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
   <!-- <link rel="stylesheet" href="doc-assets/vendor/jquery-ui/themes/base/jquery-ui.min.css"> -->
-  <!-- <link rel="stylesheet" href="doc-assets/vendor/prism/prism.css"> -->
 
-  <!-- CSS Front Template -->
+  <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <!-- <link rel="stylesheet" href="assets/css/theme.css"> -->
 
   <!-- CSS Front Doc -->
   <link rel="stylesheet" href="assets/css/portal.css">
@@ -725,7 +718,7 @@
   <!-- ========== END MAIN ========== -->
 
   <!-- Go to Top -->
-  <a class="js-go-to u-go-to" href="javascript:;"
+  <!-- <a class="js-go-to u-go-to" href="javascript:;"
     data-position='{"bottom": 15, "right": 15 }'
     data-type="fixed"
     data-offset-top="400"
@@ -733,48 +726,48 @@
     data-show-effect="slideInUp"
     data-hide-effect="slideOutDown">
     <span class="fas fa-arrow-up u-go-to__inner"></span>
-  </a>
+  </a> -->
   <!-- End Go to Top -->
 
   <!-- JS Global Compulsory -->
   <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
   <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-  <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <!-- <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script> -->
   <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
 
   <!-- JS Implementing Plugins -->
-  <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-  <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="doc-assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
-  <script src="doc-assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
-  <script src="doc-assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <!-- <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script> -->
+  <!-- <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
+  <!-- <script src="doc-assets/vendor/jquery-ui/jquery-ui.core.min.js"></script> -->
+  <!-- <script src="doc-assets/vendor/jquery-ui/ui/widgets/menu.js"></script> -->
+  <!-- <script src="doc-assets/vendor/jquery-ui/ui/widgets/mouse.js"></script> -->
   <script src="doc-assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
-  <script src="doc-assets/vendor/prism/prism.js"></script>
+  <!-- <script src="doc-assets/vendor/prism/prism.js"></script> -->
 
   <!-- JS Front -->
   <script src="assets/js/hs.core.js"></script>
-  <script src="assets/js/components/hs.header.js"></script>
-  <script src="assets/js/components/hs.focus-state.js"></script>
-  <script src="assets/js/components/hs.go-to.js"></script>
-  <script src="assets/js/components/hs.malihu-scrollbar.js"></script>
+  <!-- <script src="assets/js/components/hs.header.js"></script> -->
+  <!-- <script src="assets/js/components/hs.focus-state.js"></script> -->
+  <!-- <script src="assets/js/components/hs.go-to.js"></script> -->
+  <!-- <script src="assets/js/components/hs.malihu-scrollbar.js"></script> -->
   <script src="doc-assets/js/components/hs.autocomplete-local-search.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
     $(document).on('ready', function () {
       // initialization of header
-      $.HSCore.components.HSHeader.init($('#header'));
+      // $.HSCore.components.HSHeader.init($('#header'));
 
       // initialization of focus state
-      $.HSCore.components.HSFocusState.init();
+      // $.HSCore.components.HSFocusState.init();
 
       // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
+      // $.HSCore.components.HSGoTo.init('.js-go-to');
 
       // initialization of malihu scrollbar
-      var $scrollbar = $('.js-scrollbar');
-      $.HSCore.components.HSMalihuScrollBar.init($scrollbar);
-      $($scrollbar).mCustomScrollbar('scrollTo', '#components li a.active');
+      // var $scrollbar = $('.js-scrollbar');
+      // $.HSCore.components.HSMalihuScrollBar.init($scrollbar);
+      // $($scrollbar).mCustomScrollbar('scrollTo', '#components li a.active');
 
 
       // $(function () {
@@ -794,13 +787,7 @@
     });
 
     $(window).on('load', function () {
-      // initialization of HSMegaMenu component
-      $('.js-mega-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 991.98,
-        hideTimeOut: 0
-      });
+
 
       // initialization of autocomplete
       $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
