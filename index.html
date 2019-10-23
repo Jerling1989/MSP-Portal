@@ -16,6 +16,7 @@
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jq-3.3.1/jszip-2.5.0/dt-1.10.20/b-1.6.0/b-html5-1.6.0/datatables.min.css"/>
 
   <!-- CSS Front Doc -->
   <link rel="stylesheet" href="assets/css/portal.css">
@@ -209,7 +210,7 @@
                 <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#deletePortalModal" href="#!">Delete <i class="fa fa-trash"></i></a>
               </div>
 
-              <div class="col-6 text-right">
+              <div class="col-6 text-right action-buttons">
                 <div style="text-transform: none; position: absolute; right: 100px; top: 6px;" class="custom-control custom-checkbox mr-3">
                   <input type="checkbox" class="custom-control-input" id="toggle-show-deleted" data-url="?show_deleted=true">
                   <label style="font-size: 14px;" class="custom-control-label" for="toggle-show-deleted">
@@ -217,7 +218,6 @@
                   </label>
                 </div>
 
-                <a class="btn btn-sm btn-success" href="#!">Export <i class="fa fa-file-excel"></i></a>
               </div>
             </div>
           </div>
@@ -710,11 +710,36 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.3.1/jszip-2.5.0/dt-1.10.20/b-1.6.0/b-html5-1.6.0/datatables.min.js"></script>
 
 
   <!-- JS Plugins Init. -->
   <script>
-    $(document).on('ready', function () {
+    $(function () {
+      const dtable = $('table').DataTable({
+        columnDefs: [ {
+            orderable: false,
+            targets:   0
+        } ],
+        "language": {
+          "info": 'Total: _TOTAL_',
+        },
+        "dom": '<"top"f>rt<"bottom"<"clear">>i',
+        order: [[ 1, 'asc' ]],
+        buttons: [
+          {
+            extend: 'excel',
+            text: 'Export <i class="fa fa-file-excel"></i>',
+            className: 'btn-sm btn-success',
+          }
+        ],
+        <!-- scrollY:        '50vh', -->
+        <!-- scrollCollapse: true, -->
+        paging:         false
+      });
+      dtable.buttons().container()
+        .appendTo($('.action-buttons'));
+
       $(function () {
         $('.portal_check').click(function(e) {
           $('.portal_check').not(this).prop('checked', false);
