@@ -712,9 +712,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-  <!-- JS Front -->
-  <script src="assets/js/hs.core.js"></script>
-
   <!-- JS Plugins Init. -->
   <script>
     $(document).on('ready', function () {
@@ -723,11 +720,6 @@
           $('.portal_check').not(this).prop('checked', false);
         });
       });
-    });
-
-    $(window).on('load', function () {
-      // initialization of autocomplete
-      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
     });
   </script>
 </body>
