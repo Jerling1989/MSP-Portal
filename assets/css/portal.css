@@ -151,9 +151,39 @@ table.dataTable {
   overflow-y: scroll;
 }
 
+@media (min-width: 1200px) {
+  #portal-table-card {
+    max-height: 62vh;
+  }
+}
+
+@media (min-width: 1300px) {
+  #portal-table-card {
+    max-height: 63vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  #portal-table-card {
+    max-height: 65vh;
+  }
+}
+
 @media (min-width: 1500px) {
   #portal-table-card {
-    max-height: 68vh;
+    max-height: 65vh;
+  }
+}
+
+@media (min-width: 1700px) {
+  #portal-table-card {
+    max-height: 67vh;
+  }
+}
+
+@media (min-width: 1850px) {
+  #portal-table-card {
+    max-height: 69vh;
   }
 }
 
