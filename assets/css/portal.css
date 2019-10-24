@@ -73,56 +73,6 @@ a[aria-expanded=false] .fa-chevron-up {
   z-index: 5;
 }
 
-#portal-table-card {
-  padding: 0;
-  margin-top: -20px;
-  max-height: 63vh;
-  overflow-y: scroll;
-}
-
-@media (min-width: 1500px) {
-  #portal-table-card {
-    max-height: 69vh;
-  }
-}
-
-div.dataTables_wrapper div.dataTables_info {
-  background-color: #f2f2f2;
-  position: fixed;
-  top: 95.5vh;
-  padding-top: 8px;
-  padding-left: 2px;
-  font-size: 1rem;
-  margin-bottom: .5rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-/*div.dataTables_wrapper div.dataTables_filter input {
-  margin-left: 0.5em;
-  display: inline-block;
-  width: 176px;
-  position: fixed;
-  z-index: 20;
-  left: 13px;
-  top: 207px;
-}
-
-@media (max-width: 1200px) {
-  div.dataTables_wrapper div.dataTables_filter input {
-    margin-left: initial;
-    width: initial;
-    position: initial;
-    z-index: initial;
-    left: initial;
-    top: initial;
-    margin-left: 0.5em;
-    display: inline-block;
-    width: auto;
-  }
-}*/
-
-
 .btn-sm {
   text-transform: none;
   margin-bottom: 10px;
@@ -184,6 +134,44 @@ table tr td:last-child {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
+
+table.dataTable {
+  margin-top: 20px !important;
+  margin-bottom: 30px !important;
+}
+
+.col-md-3 > .card {
+  max-height: 145px !important;
+}
+
+#portal-table-card {
+  padding: 0;
+  margin-top: -20px;
+  max-height: 63.5vh;
+  overflow-y: scroll;
+}
+
+@media (min-width: 1500px) {
+  #portal-table-card {
+    max-height: 68vh;
+  }
+}
+
+div.dataTables_wrapper div.dataTables_info {
+  background-color: #f7f7f7;
+  border-top: 3px solid #dadada;
+  position: absolute;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
 
 
 /*------------------------------------
@@ -442,8 +430,6 @@ h4:hover .anchorjs-link {
 }
 .hs-docs-sidebar--dark {
   background-color: #010a14;
-  position: fixed;
-  z-index: 1;
 }
 .hs-docs-sidebar--dark .hs-docs-navside__links > li > a {
   color: #fff;
