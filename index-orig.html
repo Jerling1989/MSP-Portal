@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Avanan | Portals</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Datatables CDN -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jq-3.3.1/jszip-2.5.0/dt-1.10.20/b-1.6.0/b-html5-1.6.0/datatables.min.css"/>
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="assets/css/portal-orig.css">
+</head>
+<body>
+
+
+  <!-- ========== LEFT ========== -->
+  <div class="js-scrollbar hs-docs-sidebar hs-docs-sidebar--dark">
+    <div class="d-flex justify-content-between py-2 py-xl-0">
+
+      <!-- Responsive Toggle Button -->
+      <button class="btn btn-link hs-docs-sidebar__toggle" type="button"
+              data-toggle="collapse"
+              data-target="#navside-accordion"
+              aria-controls="navside-accordion"
+              aria-expanded="false"
+              aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+          <title>Menu</title>
+          <path stroke="#569bbe" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+        </svg>
+      </button>
+      <!-- End Responsive Toggle Button -->
+    </div>
+
+    <!-- Sidebar Nav -->
+    <nav id="navside-accordion" class="hs-docs-navside collapse">
+      <img style="width: 90px; height: auto; margin-top: 0px; margin-bottom: 20px; margin-left: 30px;" src="assets/img/avanan-logo-white-teal.png">
+
+      <ul id="components" class="hs-docs-navside__links collapse show" data-parent="#navside-accordion">
+        <li><a style="text-transform: none; 
+                      padding: 30px 34px 30px 34px; color: #fff;
+                      background-color: #0e1620;
+                      cursor: pointer;
+                      position: relative;
+                      font-weight: 600;" 
+                      class="active text-white"
+                      data-toggle="collapse"
+                      data-target="#basicsCollapseOne"
+                      aria-expanded="false"
+                      aria-controls="basicsCollapseOne" href="index.html">test@example.com<br><span style="font-size: 10px;">Admin<span></span> <i style="position: absolute; right: 20px; margin-top: -3px;" class="fa fa-lg fa-chevron-down pull-right"></i> <i style="position: absolute; right: 20px; margin-top: -3px;" class="fa fa-lg fa-chevron-up pull-right"></i></a>
+
+        </li>
+
+      <!-- Basics Accordion -->
+      <div id="basicsAccordion">
+        <!-- Card -->
+        <div class="mb-3">
+          <div id="basicsCollapseOne" class="collapse nested"
+               aria-labelledby="basicsHeadingOne"
+               data-parent="#basicsAccordion">
+            <div class="text-white">
+              <li data-toggle="modal" data-target="#logOutModal"><a href="#!">Log out</a></li>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+      </div>
+      <!-- End Basics Accordion -->
+      </ul>
+      
+
+      <!-- Search -->
+      <form class="form-inline input-group-sm">
+        <input type="search" style="margin: 20px;" class="js-hs-docs-search form-control w-100" type="text" placeholder="Search" aria-controls="DataTables_Table_0">
+        <span style="margin-top: -50px; margin-left: 180px; margin-bottom: 20px;" class="fa fa-search"></span>
+      </form>
+      <!-- End Search -->
+
+
+      <ul style="" id="components" class="hs-docs-navside__links collapse show mt-2" data-parent="#navside-accordion">
+        <li style="display: block;
+            padding: 20px 0 20px 34px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-decoration: none;">Filters 
+            <img style="width: 20px;
+                 height: auto;
+                 position: absolute;
+                 right: 15px;" src="assets/img/filters.png" />
+        </li>
+        
+        <div class="nested">
+          <li class="active"><a href="#!">All</a></li>
+          <li><a href="#!">Paid</a></li>
+          <li><a href="#!">PoC</a></li>
+          <li><a href="#!">Expired</a></li>
+          <li><a href="#!">Expires in 2w</a></li>
+          <li><a href="#!">Has Issues</a></li>
+          <span>
+            <li><a style="margin-left: 15px;" href="#!">- Warnings</a></li>
+            <li><a style="margin-left: 15px;" href="#!">- Errors</a></li>
+          </span>
+        </div>
+      </ul>
+    </nav>
+    <!-- End Sidebar Nav -->
+  </div>
+  <!-- ========== END LEFT ========== -->
+
+
+  <!-- ========== MAIN ========== -->
+  <main class="hs-docs-content space-top-2 space-top-xl-3" role="main">
+
+    <div class="table-content" style="">
+        <h4 style="font-weight: 400; margin-top: -5px; margin-bottom: 10px;">Portals</h4>
+        
+        <div class="row mb-4">
+          <div class="col-md-3">
+            <div class="card" style="">
+              <div class="card-header">
+                <h6>Paying Customers</h6>
+              </div>
+              <div class="card-body row">
+                <div class="col-6 text-center">
+                  <h3>245</h3>
+                  <h6>Portals</h6>
+                </div>
+                <div class="col-6 text-center">
+                  <h3>45k</h3>
+                  <h6>Users</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card" style="">
+              <div class="card-header">
+                <h6>Customers in PoC</h6>
+              </div>
+              <div class="card-body row">
+                <div class="col-6 text-center">
+                  <h3>23</h3>
+                  <h6>Portals</h6>
+                </div>
+                <div class="col-6 text-center">
+                  <h3>12k</h3>
+                  <h6>Users</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card" style="">
+              <div class="card-header">
+                <h6>Renewal</h6>
+              </div>
+              <div class="card-body row">
+                <div class="col-6 text-center">
+                  <h3>23</h3>
+                  <h6>Expired</h6>
+                </div>
+                <div class="col-6 text-center">
+                  <h3>56</h3>
+                  <h6>Expires in 2w</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card" style="">
+              <div class="card-header">
+                <h6>Portal Issues</h6>
+              </div>
+              <div class="card-body row">
+                <div class="col-6 text-center">
+                  <h3>26</h3>
+                  <h6>Warnings</h6>
+                </div>
+                <div class="col-6 text-center">
+                  <h3>5</h3>
+                  <h6>Errors</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite"></div>
+
+
+        <div class="card">
+          <div class="card-header">
+            <div class="row">
+              <div class="col-6">
+                <a class="btn btn-sm btn-primary mr-2" data-toggle="modal" data-target="#createPortalModal" href="#!">Add <i class="fa fa-plus"></i></a>
+                <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#deletePortalModal" href="#!">Delete <i class="fa fa-trash"></i></a>
+              </div>
+
+              <div class="col-6 text-right action-buttons">
+                <div style="text-transform: none; position: absolute; right: 100px; top: 6px;" class="custom-control custom-checkbox mr-3">
+                  <input type="checkbox" class="custom-control-input" id="toggle-show-deleted" data-url="?show_deleted=true">
+                  <label style="font-size: 14px;" class="custom-control-label" for="toggle-show-deleted">
+                    Show deleted
+                  </label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="portal-table-card" class="card-body">
+            <table class="table">
+              <thead>
+                <tr id="labels">
+                  <th style=""></th>
+                  <th>Portal</th>
+                  <th>Mode</th>
+                  <th>Start Date</th>
+                  <th>Expiry Date</th>
+                  <th>Total Users</th>
+                  <th>Licensed Users</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://usecurity.sonicwallcloudsec.com/">
+                      getusecurity <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>PoC</td>
+                  <td>Sep. 22, 2019</td>
+                  <td>Oct. 23, 2019</td>
+                  <td>186</td>
+                  <td>120</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck2">
+                      <label class="custom-control-label" for="customCheck2"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://domryles.sonicwallcloudsec.com/">
+                      schmittconsulting <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>PoC</td>
+                  <td>Oct. 11, 2019</td>
+                  <td>Nov. 13, 2019</td>
+                  <td>42</td>
+                  <td>36</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck3">
+                      <label class="custom-control-label" for="customCheck3"></label>
+                    </div>  
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://gjvoormeulen.sonicwallcloudsec.com/">
+                      okmarketing <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>Paid</td>
+                  <td>Apr. 3, 2019</td>
+                  <td>May. 14, 2020</td>
+                  <td>21</td>
+                  <td>27</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck4">
+                      <label class="custom-control-label" for="customCheck4"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://ddd.avanan.net/">
+                      a1security <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>Paid</td>
+                  <td>Feb. 23, 2019</td>
+                  <td>Mar. 18, 2020</td>
+                  <td>18</td>
+                  <td>17</td>
+                  <td><i class="fas fa-circle text-danger"></i> office365_emails: Authentication token expiry error</td>
+                </tr>
+
+
+
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck5">
+                      <label class="custom-control-label" for="customCheck5"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://usecurity.sonicwallcloudsec.com/">
+                      oneplusmedia <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>PoC</td>
+                  <td>Jul. 29, 2019</td>
+                  <td>Aug. 28, 2019</td>
+                  <td>60</td>
+                  <td>55</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck6">
+                      <label class="custom-control-label" for="customCheck6"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://domryles.sonicwallcloudsec.com/">
+                      fastphonerepair <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>PoC</td>
+                  <td>Nov. 14, 2019</td>
+                  <td>Dec. 1, 2019</td>
+                  <td>108</td>
+                  <td>85</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck7">
+                      <label class="custom-control-label" for="customCheck7"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://gjvoormeulen.sonicwallcloudsec.com/">
+                      deweycheatumandhowe <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>PoC</td>
+                  <td>Jan. 5, 2020</td>
+                  <td>Feb. 28, 2020</td>
+                  <td>12</td>
+                  <td>10</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck8">
+                      <label class="custom-control-label" for="customCheck8"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://ddd.avanan.net/">
+                      mattsecurity <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>Paid</td>
+                  <td>Jun. 17, 2019</td>
+                  <td>Aug. 22, 2020</td>
+                  <td>84</td>
+                  <td>162</td>
+                  <td><i class="fas fa-circle text-warning"></i> office365_onedrive: Realtime protection failed</td>
+                </tr>
+
+
+
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck9">
+                      <label class="custom-control-label" for="customCheck9"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://usecurity.sonicwallcloudsec.com/">
+                      a1datastorage <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>PoC</td>
+                  <td>Mar. 1, 2020</td>
+                  <td>Apr. 10, 2020</td>
+                  <td>52</td>
+                  <td>75</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck10">
+                      <label class="custom-control-label" for="customCheck10"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://domryles.sonicwallcloudsec.com/">
+                      pacificcharters <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>PoC</td>
+                  <td>Sep. 21, 2019</td>
+                  <td>Oct. 9, 2019</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck11">
+                      <label class="custom-control-label" for="customCheck11"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://gjvoormeulen.sonicwallcloudsec.com/">
+                      frankstaxi <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>Paid</td>
+                  <td>Jun. 7, 2019</td>
+                  <td>Sep. 22, 2020</td>
+                  <td>36</td>
+                  <td>40</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck12">
+                      <label class="custom-control-label" for="customCheck12"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://ddd.avanan.net/">
+                      virtualbutcher <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>Paid</td>
+                  <td>Oct. 31, 2019</td>
+                  <td>Nov. 18, 2019</td>
+                  <td>117</td>
+                  <td>105</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+
+
+
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck13">
+                      <label class="custom-control-label" for="customCheck13"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://usecurity.sonicwallcloudsec.com/">
+                      worldlytravels <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>PoC</td>
+                  <td>Aug. 20, 2019</td>
+                  <td>Sep. 14, 2019</td>
+                  <td>48</td>
+                  <td>50</td>
+                  <td><i class="fas fa-circle text-danger"></i> office365_emails: Authentication token expiry error</td>
+                </tr>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck14">
+                      <label class="custom-control-label" for="customCheck14"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://domryles.sonicwallcloudsec.com/">
+                      squeakysneakers <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>PoC</td>
+                  <td>Apr. 27, 2019</td>
+                  <td>Jul. 30, 2019</td>
+                  <td>116</td>
+                  <td>125</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck15">
+                      <label class="custom-control-label" for="customCheck15"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://gjvoormeulen.sonicwallcloudsec.com/">
+                      annaschocolates <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>Paid</td>
+                  <td>Dec. 2, 2019</td>
+                  <td>Jan. 23, 2020</td>
+                  <td>34</td>
+                  <td>31</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+          ​
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input portal_check" id="customCheck16">
+                      <label class="custom-control-label" for="customCheck16"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <a target="_blank" href="https://ddd.avanan.net/">
+                      midtowndiamonds <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </td>
+                  <td>PoC</td>
+                  <td>Sep. 16, 2019</td>
+                  <td>Oct. 23, 2019</td>
+                  <td>93</td>
+                  <td>102</td>
+                  <td><i class="fas fa-circle text-success"></i> Active</td>
+                </tr>
+
+
+          ​
+              </tbody>
+            </table>
+          </div>
+          </div>
+
+        <!-- <div style="padding-top: 8px;
+             padding-left: 2px;
+             font-size: 1rem;
+             margin-bottom: .5rem;
+             font-weight: 500;
+             line-height: 1.2;"  class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Total: 16</div>
+
+
+             <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Total: 2 (filtered from 16 total entries)</div> -->
+
+      </div>
+
+
+
+      <!-- DELETE PORTAL MODAL -->
+      <div class="modal fade" id="deletePortalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div style="background: repeating-linear-gradient(
+                 45deg,
+                 #dc3546,
+                 #dc3546 20px,
+                 #c0392b 20px,
+                 #c0392b 40px
+               );" class="modal-header">
+
+              <h5 style="font-weight: 600;" class="modal-title text-white h1" id="exampleModalLabel">Do you really want to delete this portal?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div style="font-size: 17px;" class="modal-body">
+              Deleting portal_name will permantly remove it from the platform and it will no longer be available. <strong>This cannot be undone.</strong>
+              <br><br>
+              <strong>Type "delete" to verify that you want to delete this portal</strong>
+              <br>
+              <form>
+                <div class="form-row">
+                  <input style="    background-color: #f2f2f2; font-size: 28px; margin: 10px 5px;" type="text" class="form-control" placeholder="delete">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button style="pointer-events: none;" type="button" class="btn btn-danger disabled" aria-disabled="true">Delete Portal <i class="fa fa-trash"></i></button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END DELETE PORTAL MODAL -->
+
+
+
+      <!-- CREATE NEW PORTAL MODAL -->
+      <div class="modal fade" id="createPortalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div style="background: repeating-linear-gradient(
+                 45deg,
+                 #007bff,
+                 #007bff 20px,
+                 #3867d6 20px,
+                 #3867d6 40px
+               );" class="modal-header">
+
+              <h5 style="font-weight: 600;" class="modal-title text-white h1" id="exampleModalLabel">Create New Portal</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div style="font-size: 17px;" class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="domain">Domain</label>
+                  <input type="text" class="form-control" id="domain" placeholder="Domain">
+                </div>
+
+                <div class="form-group">
+                  <label for="domain">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Full Name">
+                </div>
+
+                <div class="form-group">
+                  <label for="domain">Phone</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                </div>
+
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input type="text" class="form-control" id="company" placeholder="Company Name">
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Add Portal <i class="fa fa-plus"></i></button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END CREATE NEW PORTAL MODAL -->
+
+
+      <!-- LOG OUT MODAL -->
+      <div class="modal fade bd-example-modal-sm" id="logOutModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+
+            <div style="background: repeating-linear-gradient(
+                 45deg,
+                 #28a745,
+                 #28a745 20px,
+                 #20bf6b 20px,
+                 #20bf6b 40px
+               );" class="modal-header">
+
+              <h5 style="font-weight: 600;" class="modal-title text-white h1" id="exampleModalLabel">Log Out</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div style="font-size: 17px; padding: 25px 20px;" class="modal-body">
+              Are you sure you want to log out?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Log out <i class="fa fa-sign-out-alt"></i></button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- END LOG OUT MODAL -->
+
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+
+  <!-- JQuery and Bootstrap JS Links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Datatables Link -->
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.3.1/jszip-2.5.0/dt-1.10.20/b-1.6.0/b-html5-1.6.0/datatables.min.js"></script>
+
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(function () {
+      const dtable = $('table').DataTable({
+        columnDefs: [ {
+            orderable: false,
+            targets:   0
+        } ],
+        "language": {
+          "info": 'Total: _TOTAL_',
+        },
+        "dom": '<"top"f>rt<"bottom"<"clear">>i',
+        order: [[ 1, 'asc' ]],
+        buttons: [
+          {
+            extend: 'excel',
+            text: 'Export <i class="fa fa-file-excel"></i>',
+            className: 'btn-sm btn-success',
+          }
+        ],
+        <!-- scrollY:        '50vh', -->
+        <!-- scrollCollapse: true, -->
+        paging:         false
+      });
+      dtable.buttons().container()
+        .appendTo($('.action-buttons'));
+
+      $(function () {
+        $('.portal_check').click(function(e) {
+          $('.portal_check').not(this).prop('checked', false);
+        });
+      });
+
+
+      // $(function () {
+      //   var table = $('#DataTables_Table_0').DataTable({
+      //     "dom": '<"top"i>rt<"bottom"><"clear">'
+      //   });
+        
+      //   $('#mySearchButton').on('keyup click', function () {
+      //     table.search($('#mySearchText').val()).draw();
+      //   });
+      // });
+
+    });
+  </script>
+</body>
+</html>
