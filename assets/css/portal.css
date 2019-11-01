@@ -209,6 +209,29 @@ th:last-child {
   min-width: 250px;
 }
 
+.nested > li:nth-last-child(2) {
+  color: #fff !important;
+}
+
+.nested > li:nth-last-child(2) > a {
+  color: #fff !important;
+}
+
+.nested > li:nth-last-child(2):hover {
+  background-color: #010a14 !important;
+  color: #fff !important;
+  cursor: default !important;
+}
+
+.nested > li:nth-last-child(2) > a:hover {
+  background-color: #010a14 !important;
+  color: #fff !important;
+  cursor: default !important;
+}
+
+ul > .nested > span > li {
+  font-size: 12px;
+}
 
 /*------------------------------------
   Markup
