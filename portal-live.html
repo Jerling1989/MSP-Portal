@@ -790,9 +790,12 @@
     //creates a global Javascript variable
     var inputTextValue;
 
+
+
     function keyup(e) {
       //setting your input text to the global Javascript Variable for every key press
       inputTextValue = e.target.value;
+      inputTextValue = inputTextValue.replace(/\s+/g, '-').toLowerCase();
       $('#domainValue').text('Your link is https://' + inputTextValue + '.avanan.net');
     }
   </script>
