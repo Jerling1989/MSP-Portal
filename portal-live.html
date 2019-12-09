@@ -660,9 +660,11 @@
                   <label for="email">Email address</label>
                   <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
+
                 <div class="form-group">
                   <label for="domain">Domain</label>
                   <input type="text" class="form-control" id="domain" placeholder="Domain">
+                  <div id="domainValue"></div>
                 </div>
 
                 <div class="form-group">
@@ -781,6 +783,18 @@
       // });
 
     });
+
+    //creates a listener for when you press a key
+    window.onkeyup = keyup;
+
+    //creates a global Javascript variable
+    var inputTextValue;
+
+    function keyup(e) {
+      //setting your input text to the global Javascript Variable for every key press
+      inputTextValue = e.target.value;
+      $('#domainValue').text('Your link is https://' + inputTextValue + '.avanan.net');
+    }
   </script>
 </body>
 </html>
