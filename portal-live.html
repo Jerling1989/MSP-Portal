@@ -664,16 +664,16 @@
                 <div class="form-group">
                   <label for="domain">Domain</label>
                   <input type="text" class="form-control" id="domain" placeholder="Domain">
-                  <div id="domainValue"></div>
+                  <p style="font-size: 14px; color: #788487;">Your link is https://<span id="domainValue"></span>.avanan.net</p>
                 </div>
 
                 <div class="form-group">
-                  <label for="domain">Name</label>
+                  <label for="name">Name</label>
                   <input type="text" class="form-control" id="name" placeholder="Full Name">
                 </div>
 
                 <div class="form-group">
-                  <label for="domain">Phone</label>
+                  <label for="phone">Phone</label>
                   <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
                 </div>
 
@@ -786,18 +786,16 @@
 
     //creates a listener for when you press a key
     window.onkeyup = keyup;
-
     //creates a global Javascript variable
-    var inputTextValue;
-
-
-
+    var inputTextValue
+    
     function keyup(e) {
       //setting your input text to the global Javascript Variable for every key press
-      inputTextValue = e.target.value;
+      inputTextValue = document.getElementById('domain').value;
       inputTextValue = inputTextValue.replace(/\s+/g, '-').toLowerCase();
-      $('#domainValue').text('Your link is https://' + inputTextValue + '.avanan.net');
+      $('#domainValue').text(inputTextValue);
     }
+
   </script>
 </body>
 </html>
